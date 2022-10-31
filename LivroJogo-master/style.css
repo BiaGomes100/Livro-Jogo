@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Roboto&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+#back{
+    background-image: url(imagens/meninopesadelo2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;   
+    width: 100vw;
+}
+
+.textozinho{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.play p{
+    position: relative;
+    font-family: 'Eater', cursive;
+    font-size: 50px;
+    width: fit-content;
+    height: 65px;
+    margin: 0 auto;
+    color: #371911;
+    background-color: #00000051;
+}
+
+a{
+    text-decoration: none;
+}
+.play p{
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.play p:hover{
+    color: #000000;
+    transform: scale(1.5);
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+
+.textozada{
+    font-family: 'Eater', cursive;
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 96px;
+    background: -webkit-linear-gradient(#682610,#550101);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#corpo{
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+button{
+    color: rgb(255, 255, 255);
+    background-color: #E6203E;
+    border: solid black 0.5px;
+    cursor: pointer;
+}
+
+.botaozinho{
+    display: flex;
+    align-items: center;
+}
+
+.botaozinho p{
+    font-size: x-small;
+    font-weight: bolder;
+    margin-left: 7px;
+}
+
+img{
+    display: flex;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagemzada{
+    margin: 0px 10px 0px 10px;
+    width: 50%;
+    height: 426px;
+    margin-top: 55px;
+    object-fit: cover;
+}
+
+.opcaos{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+}
+
+.options{
+    width: 103px;
+    height: 37px;
+    margin-bottom: 59px;
+}
+
+.optxt{
+    display: flex;
+    align-items: baseline;
+    margin-right: 55px;
+}
+
+.optxt p{
+    margin-left: 7px;
+}
+
+.optxt_center{
+    margin: 0 auto;
+}
+
+.options_center{
+    border-radius: 14px;
+    width: 127px;
+    height: 41px;
+    margin-bottom: 59px;
+}
+
+.options_center:hover{
+    transform: scale(1.1);
+    background-color: #0CB801;
+    transition: all 400ms;
+}
+
+.try{
+    margin-top: 10px;
+}
+
+.optxt_try{
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+
+
+.final{
+    text-align: center;
+    font-size: 25px;
+}
+
+section{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+section p{
+    width: 50%;
+    font-size: larger;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1600px){
+    #corpo{
+        zoom: 150%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagemzada{
+        width: 100%;
+    }
+
+    section p{
+        width: 100%;
+    }
+
+    .textozada{
+        font-size: 38px;
+    }
+
+    .opcaos{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.inicial{
+    background-color: #000000;
+    
+}
+
+.altocontraste, .altocontraste #conteudo {
+    background-color: #333333;
+}
+
+.altocontraste #conteudo p, h3{
+    color: #f3f3f3;
+}
+
+.altocontraste .botaozinho p{
+    color: white;
+}
+
+.botao {
+    background-color: #000000;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 100ms;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.botao:hover {
+    transform: scale(1.2);
+    background: #000000;
+}
+
+
+
